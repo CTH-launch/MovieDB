@@ -5,12 +5,11 @@ class Movie extends Component {
 	constructor(props) {
 		super(props);
 		this.viewMovie = this.viewMovie.bind(this);
-
 	}
 
   viewMovie(e) {
-    const url = "http://www.themoviedb.org/movie/" + this.props.movie.id
-    window.location.href = url
+    const url = "http://www.themoviedb.org/movie/" + this.props.movie.id;
+    window.location.href = url;
   }
 
   render() {
@@ -28,7 +27,7 @@ class Movie extends Component {
 						<p>
 							<tr>
                 <td>
-                  Rate:{movie.vote_average}
+                  Rating:{movie.vote_average}
                 </td>
                 <td width="20"/>
                 <td>

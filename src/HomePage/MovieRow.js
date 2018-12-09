@@ -2,16 +2,13 @@ import React from 'react'
 
 class MovieRow extends React.Component{
   viewMovie() {
-    const url = "http://www.themoviedb.org/movie/" + this.props.movie.id
-    window.location.href = url
+    const url = "http://www.themoviedb.org/movie/" + this.props.movie.id;
+    window.location.href = url;
   }
   render() {
     const {movie} = this.props;
     return <table key={this.props.movie.id}>
       <tbody>
-        <div>
-          <h3>Popular Movies</h3>
-        </div>
         <tr>
           <td>
             <img alt="poster" width="200" src={'https://image.tmdb.org/t/p/w185'+movie.poster_path}/>
@@ -21,7 +18,7 @@ class MovieRow extends React.Component{
             <p>
               <tr>
                 <td>
-                  Rate:{movie.vote_average}
+                  Rating:{movie.vote_average}
                 </td>
                 <td width="20"/>
                 <td>
@@ -38,4 +35,4 @@ class MovieRow extends React.Component{
   }
 }
 
-export default MovieRow
+export default MovieRow;
