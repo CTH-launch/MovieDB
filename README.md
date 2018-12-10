@@ -19,5 +19,5 @@ You will also see any lint errors in the console.
 
 ## API CALL
 
-In the HomePage, we request for the most popular movies.
+In the HomePage, we request for the most popular movies.<br>
 After search, everthing query via API:ddb907d69f1671fabdfd75c40b664a37 will be returned.
